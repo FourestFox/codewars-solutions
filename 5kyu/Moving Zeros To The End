@@ -1,0 +1,5 @@
+def move_zeros(lst):
+    tmp = [i for i in lst if i > 0]
+    zero = [0 for i in range(len(lst) - len(tmp))]
+    tmp.extend(zero)
+    return tmp
